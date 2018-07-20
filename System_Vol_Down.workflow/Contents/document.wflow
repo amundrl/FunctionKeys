@@ -51,8 +51,8 @@
 				<key>ActionParameters</key>
 				<dict>
 					<key>source</key>
-					<string>set currentvol to output volume of (get volume settings)if currentvol &lt; 5 then # 0 is min	set volume output volume 0else	set volume output volume (currentvol - 5)end if
-set endvol to output volume of (get volume settings)display notification "Volume: " &amp; (endvol) with title "System"</string>
+					<string>-- From https://superuser.com/a/224382
+set currentvol to output volume of (get volume settings)if currentvol &lt; 5 then # 0 is min	set volume output volume 0else	set volume output volume (currentvol - 5)end ifset endvol to output volume of (get volume settings)display notification "Volume: " &amp; (endvol) with title "System"</string>
 				</dict>
 				<key>BundleIdentifier</key>
 				<string>com.apple.Automator.RunScript</string>
